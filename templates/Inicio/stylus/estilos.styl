@@ -1,0 +1,184 @@
+girs = #333333
+gris_claro = #818181
+facebook = #3D5A98
+twitter = #5FA9DD
+rosa = #CC2F6F
+@import './style.css'
+@font-face
+	font-family HelveticaNeue
+	font-style normal
+	src url(../fonts/HelveticaNeueFont/HelveticaNeue.ttf)
+@font-face
+	font-family Varela
+	font-style normal
+	src url(../fonts/Varela/Varela-Regular.ttf)
+@font-face
+	font-family Varela_Round
+	font-style normal
+	src url(../fonts/Varela_Round/VarelaRound-Regular.ttf)
+body
+	color gris_claro
+	font-size 16px
+	font-family Varela
+	margin 0
+	padding 0
+	text-align center
+figure
+	margin 0
+	padding 0
+h2
+	color white
+	font-weight normal
+h3
+	color girs
+	font-weight normal
+	font-family Varela_Round
+.account
+	padding 2.3em
+	.login
+	.create
+		color gris_claro
+	.login
+		border-right 1px solid gris_claro
+		margin-right 15%
+		padding 1em 30% 1em 1em
+	.create
+		display inline-block
+.button_log
+	display none
+.cuenta
+.log
+	border-top 1px solid gris_claro
+	border-bottom 1px solid gris_claro
+	display none
+	margin 0 auto
+	width 80%
+.registrate
+.log_in
+	background rosa
+	border-radius .5em
+	color white
+	display block
+	font-size 1.5em
+	margin auto
+	margin-bottom 2em
+	margin-top 1em
+	padding .5em
+	text-decoration none
+	width 70%
+.input
+	display block
+	font-size 1.5em
+	margin auto
+	margin-top .5em
+	padding .5em
+	width 70%
+.footer
+	background girs
+	overflow hidden
+	padding 1em
+	a
+		color white
+		float right
+		margin-right 1em
+	.logo_footer
+		float left
+		width 100px
+		img
+			width 100%
+.head
+	background url('../img/concerte.jpeg') center center
+	padding 3em
+	h2
+		font-family HelveticaNeue
+	.conectate
+		.create_account
+			display none
+			margin-top 1em
+			text-align center
+		a
+			border-radius 10px
+			color white
+			display block
+			margin 0 auto
+			padding 1em
+			text-align left
+			text-decoration none
+			width 14em
+		.facebook
+			background-color facebook
+		.twitter
+			background-color twitter
+			margin-top 1em
+			text-align left
+.descripcion
+	margin-top 1em
+		h2 
+			color gris_claro
+			margin .5em 0 1em 0
+.imagen
+	width 100%
+	height 138px
+@media screen and (min-width:500px)	
+	.imagen
+		height 210px
+@media screen and (min-width:1000px)
+	figure
+		display inline-block
+		width 200px
+	.account
+		display none
+	.button_log
+		display block
+		font-size 1.2em
+		position absolute
+		top 2em
+		right 10em
+		a
+			color rosa
+	.comparte
+		position relative
+		figure
+			position absolute
+			right 20%
+			top -40px
+		.frase
+			left 0
+			position absolute
+	.crea
+		margin-top 12em
+		.frase
+			margin-top 1em
+	.descripcion
+		margin-top 2.4em
+	.footer
+		a
+			float left
+		.logo_footer
+			margin-left 5em
+			margin-right 1.4em
+	.head
+		.conectate
+			.create_account
+				display block
+				a
+					color rosa
+					display inline
+					padding 0
+					text-decoration underline
+		.text
+			margin-top 3em
+	.logo
+		position absolute
+		left 10em
+		top 2em
+		width 150px
+		img
+			width 100%
+	.frase
+		display inline-block
+		margin-left 13em
+		vertical-align top
+	.imagen
+		border-radius 50%
+		margin-bottom 2.5em

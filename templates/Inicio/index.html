@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>Sfotipy | inicio</title>
+</head>
+<body>
+	<header class="head">
+		<figure class="logo">
+			<img src="img/logo.png" alt="">
+		</figure>
+		<h2 class="text">
+			Toda la música que te gusta,
+		</h2>
+		<h2 class="text2">
+			en todas partes
+		</h2>
+		<div class="conectate">
+			<a href="#" class="facebook icon-facebook">Conéctate con Facebook</a>
+			<a href="#" class="twitter icon-twitter">Conéctate con Twitter</a>
+			<div class="create_account">
+			or <a href="#" id="create_button">Create Account</a>
+			</div>
+		</div>
+		<div class="button_log">
+			<a href="#" id="button_log">Log in</a>
+		</div>
+		
+	</header>
+	<div class="account">
+			<a href="#logeate" class="login" id='logeate'>Login</a>
+			<a href="#creacuenta"class="create" id='creacuenta'>Create Account</a>
+	</div>
+	<div class="log" id="login">
+		<h3>Log in</h3>
+		<input type="text" class="input icon-user" placeholder='Username o email'>
+		<input type="text" class="input icon-uniE604" placeholder='Choose Password'>
+		<a href="#" class="registrate log_in">Log in</a>
+	</div>
+	<div class="cuenta" id="cuenta">
+		<h3>Crea una cuenta</h3>
+		<input type="text" class="input icon-user" placeholder='Username'>
+		<input type="text" class="input icon-mail" placeholder='Mail'>
+		<input type="text" class="input icon-uniE604" placeholder='Choose Password'>
+		<input type="text" class="input icon-uniE604" placeholder='Confirm Password'>
+		<a href="#" class="registrate">Regístrate</a>
+	</div>
+	<section class="descripcion">
+		<div class="escucha">
+			<figure class="escucha_img">
+				<img src="img/audifonos.jpg" alt="" class="imagen">
+			</figure>
+			<div class="frase">
+			<h3>Escucha</h3>
+				<p>Lorem ipsum dolor sit amet, </p>
+				<p>consectetur adipisicing elit.</p>
+			</div>
+		</div>
+		<div class="comparte">
+			<figure class="comparte_img">
+				<img src="img/comparte.png" alt="" class="imagen">
+			</figure>
+			<div class="frase">
+			<h3>Comparte</h3>
+				<p>Lorem ipsum dolor sit amet,</p>
+				<p>consectetur adipisicing elit.</p>
+			</div>
+		</div>
+		<div class="crea">
+			<figure class="crea_img">
+				<img src="img/crea.png" alt="" class="imagen">
+			</figure>
+			<div class="frase">
+				<h3>Crea y sigue playlist</h3>
+				<p>Lorem ipsum dolor sit amet,</p>
+				<p>consectetur adipisicing elit.</p>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<figure class="logo_footer">
+			<img src="img/logo.png" alt="">
+		</figure>
+		<a href="#">about us</a>
+		<a href="#">legal</a>
+	</footer>
+	<script src="js/jquery.js"></script>
+	<script>
+		$('#logeate, #button_log').on('click',logeate);
+		$('#creacuenta, #create_button').on('click',creacuenta);
+		function logeate () {
+			$('#login').slideToggle( "slow");
+		}
+		function creacuenta(){
+			$('#cuenta').slideToggle( "slow");
+		}
+	</script>
+</body>
+</html>
